@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir { dirs 'libs' }
+    }
+
+    uploadArchives {
+        repositories {
+            apply plugin: 'maven'
+            mavenDeployer {
+                pom.groupId = groupId
+                pom.artifactId = "lcs-player"
+                pom.version = "1.0.0-SNAPSHOT"
+                snapshotRepository(url: mavenServer + mavenSnapshots) {
+                    authentication(userName: repoUsername, password: repoPassword)
+                }
+
+//                pom.version = "1.0.0"
+//                repository(url: mavenServer+mavenReleases) {
+//                    authentication(userName: repoUsername, password: repoPassword)
+//                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26+'
+    testImplementation 'junit:junit:4.12'
+    compileOnly(name: 'AlivcPlayer-3.4.6', ext: 'aar')
+    compileOnly(name: 'AliyunVodPlayer-3.4.6', ext: 'aar')
+    compileOnly(name: 'AlivcReporter-1.2', ext: 'aar')
+    compileOnly(name: 'hipraiseanimationlib', ext: 'aar')
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#352e2e">
+
+    <com.example.playerlibrary.widget.BaseVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp"
+        android:background="#000000"
+        />
+
+    <TextView
+        android:id="@+id/testbut"
+        android:background="@color/alivc_white"
+        android:layout_marginTop="30dp"
+        android:text="测试获取时长"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

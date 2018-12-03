@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="180dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="56.5dp"
+    android:layout_marginLeft="12dp"
+    tools:background="@color/colorAccent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/portrait_chat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp"
+        android:requiresFadingEdge="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/portrait_chat_newmsg_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone">
+
+        <include layout="@layout/ailp_chat_newmsg_tip" />
+    </RelativeLayout>
+</RelativeLayout>

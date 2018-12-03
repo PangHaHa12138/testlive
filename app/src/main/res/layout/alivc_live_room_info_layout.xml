@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="1dp"
+    android:paddingTop="3dp"
+    tools:ignore="contentDescription">
+
+    <com.example.pang.testlive.AlivcLiveRoom.ArchorAvatarView
+        android:id="@+id/ahrchor_info_view"
+        android:layout_width="125dp"
+        android:layout_height="44dp" />
+
+    <com.example.pang.testlive.AlivcLiveRoom.LiveRoomViewerListView
+        android:id="@+id/viewer_info_listview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/ahrchor_info_view" />
+
+    <LinearLayout
+        android:id="@+id/layout_like_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ahrchor_info_view"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/alivc_room_info_background"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/alivc_icon_like_count" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/white"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_room_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ahrchor_info_view"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:scrollIndicators=""
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:textColor="#99ffffff"
+        android:textSize="12dp" />
+</RelativeLayout>

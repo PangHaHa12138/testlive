@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/chat_newmsg_tip_width"
+        android:layout_height="@dimen/chat_newmsg_tip_height"
+        android:background="@drawable/ailp_chat_tip_rectangle"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/portrait_newmsg_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="99条新消息"
+            android:textSize="@dimen/chat_newmsg_tip_textsize"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_newmsg_tip_color"/>
+        <RelativeLayout
+            android:layout_width="@dimen/chat_newmsg_tip_triangle_size"
+            android:layout_height="@dimen/chat_newmsg_tip_triangle_size"
+            android:background="@drawable/ailp_chat_tip_triangle"
+            android:layout_toRightOf="@id/portrait_newmsg_tip_text"
+            android:layout_marginTop="@dimen/chat_newmsg_tip_triangle_margintop"
+            android:rotation="180"></RelativeLayout>
+</RelativeLayout>

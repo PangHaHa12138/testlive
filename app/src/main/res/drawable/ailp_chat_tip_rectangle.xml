@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="40dip" />
+            <stroke android:color="@color/chat_newmsg_tip_color" android:width="2dp" />
+            <solid android:color="@color/chat_newmsg_tip_bg_color" />
+        </shape>
+    </item>
+</layer-list>

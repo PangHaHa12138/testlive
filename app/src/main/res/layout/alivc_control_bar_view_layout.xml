@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="0.5dp"--><!--android:background="@color/ffffff" />-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@id/tool_bar"
+        android:background="@color/ffffff" />
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingHorizontal="8dp"
+            android:text="@string/chat_hint"
+            android:textColor="@color/ffffff"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/btn_message_input"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:onClick="onClick"
+            android:src="@drawable/icon_msg" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/beauty_btn"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_beauty" />
+
+        <ImageView
+            android:id="@+id/btn_audio_control"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_music" />
+
+
+        <ImageView
+            android:id="@+id/btn_silent"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_mic" />
+
+        <ImageView
+            android:id="@+id/flash_btn"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_flash" />
+
+        <ImageView
+            android:id="@+id/switch_camera"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_camera" />
+
+        <ImageView
+            android:id="@+id/btn_screen"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/course_fullscrence_icon_defa" />
+
+        <ImageView
+            android:id="@+id/btn_like"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@drawable/icon_like" />
+
+    </LinearLayout>
+
+
+</merge>

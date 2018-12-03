@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    android:background="#030303">
+
+    <!--<com.example.pang.testlive.PlayerView.AliyunVodPlayerView-->
+        <!--android:id="@+id/ali_player_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_height="200dp">-->
+
+    <!--</com.example.pang.testlive.PlayerView.AliyunVodPlayerView>-->
+
+
+    <com.example.pang.testlive.AlivcLiveRoom.AlivcLiveRoomView
+        android:id="@+id/alivc_chat_room_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.pang.testlive.AlivcLiveRoom.AlivcLiveRoomView>
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_close"-->
+        <!--android:layout_width="44dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@drawable/icon_close" />-->
+
+</FrameLayout>

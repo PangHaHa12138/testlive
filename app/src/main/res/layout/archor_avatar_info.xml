@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="40dp"
+    android:background="@drawable/alivc_archor_avatar_bg"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/archor_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.5dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/archor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/archor_avatar"
+        android:layout_marginLeft="5.5dp"
+        android:layout_toRightOf="@id/archor_avatar"
+        android:gravity="top"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/archor_viewercount_icon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@+id/archor_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.5dp"
+        android:layout_toRightOf="@id/archor_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_viewer_count" />
+
+    <TextView
+        android:id="@+id/room_viwer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/archor_avatar"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/archor_viewercount_icon"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="9dp" />
+
+</RelativeLayout>

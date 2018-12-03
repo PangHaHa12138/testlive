@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alivc_dialog_error_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/alivc_alivc_replay_msg"
+        android:textColor="@color/alivc_white"
+        android:textSize="@dimen/alivc_loading_font_size" />
+
+
+    <TextView
+        android:id="@+id/replay"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/alivc_rr_bg_blue"
+        android:gravity="center"
+        android:text="@string/alivc_replay"
+        android:textColor="@color/alivc_blue"
+        android:textSize="@dimen/alivc_error_font_size" />
+
+</LinearLayout>

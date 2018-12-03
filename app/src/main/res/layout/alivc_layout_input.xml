@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_input_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/E6373d41"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/input_background"
+            android:layout_toStartOf="@+id/quizzes_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_comment_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/alivc_white"
+                android:lineSpacingExtra="3dp"
+                android:hint="@string/chat_hint"
+                android:background="@null"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:maxLines="2"
+                android:minHeight="30dp"
+                android:textColorHint="#999999" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quizzes_send_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/alivc_send_bt"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/ffffff"
+            android:textSize="17.5sp" />
+
+</RelativeLayout>
