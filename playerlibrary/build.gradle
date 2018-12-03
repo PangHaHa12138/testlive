@@ -55,6 +55,7 @@ dependencies {
     compileOnly(name: 'AliyunVodPlayer-3.4.6', ext: 'aar')
     compileOnly(name: 'AlivcReporter-1.2', ext: 'aar')
     compileOnly(name: 'hipraiseanimationlib', ext: 'aar')
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
