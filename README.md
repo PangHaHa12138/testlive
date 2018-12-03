@@ -9,6 +9,7 @@
 飘心效果，还有列表单例播放视频 ,列表全屏视频,视频支持手势,进度,亮度,声音
 ###
 效果图:
+###
 ![gif](https://github.com/PangHaHa12138/testlive/blob/master/app/Screenshot_gif/007.gif)
 ![gif](https://github.com/PangHaHa12138/testlive/blob/master/app/Screenshot_gif/001.gif)
 ![gif](https://github.com/PangHaHa12138/testlive/blob/master/app/Screenshot_gif/002.gif)
